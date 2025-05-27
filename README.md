@@ -68,16 +68,17 @@ Access the app in your browser at http://localhost:8501.
 
 📁 Project Structure
 
-bash
-Copy
-Edit
-irs-project/
-├── app.py                # Streamlit UI entry point
-├── src/
-│   └── helper.py         # PDF reading, embedding, vector DB setup
-├── .env                  # API key environment variables
-├── requirements.txt      # Python dependencies
-└── README.md
+IRS/
+├── app.py                  # Main application file
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── .env                    # Environment variables (not pushed to GitHub)
+├── src/                    # Source folder
+│   └── helper.py           # Helper functions (text extraction, chunking, etc.)
+├── data/                   # Folder to hold uploaded or test PDFs
+│   └── sample.pdf
+└── assets/                 # Optional static assets like logos
+    └── logo.png
 
 💬 Usage
 
