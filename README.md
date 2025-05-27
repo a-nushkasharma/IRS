@@ -35,51 +35,65 @@ Environment Management: Python-dotenv
 🧪 Installation
 
 1. Clone the Repository
-bash
+```bash
 Copy
 Edit
 git clone https://github.com/yourusername/irs-project.git
 cd irs-project
+```
 2. Create a Virtual Environment
-bash
+```bash
 Copy
 Edit
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 3. Install Requirements
-bash
+```bash
 Copy
 Edit
 pip install -r requirements.txt
+```
 4. Set Environment Variables
 Create a .env file in the project root and add your API key if using a provider like OpenAI or Hugging Face:
-
+```bash
 ini
 Copy
 Edit
 OPENAI_API_KEY=your_openai_key
 HUGGINGFACEHUB_API_TOKEN=your_huggingface_token
+```
 5. Run the Application
-bash
+```bash
 Copy
 Edit
 streamlit run app.py
 Access the app in your browser at http://localhost:8501.
+```
 
 📁 Project Structure
+```bash 
+IRS/ 
 
-IRS/
 ├── app.py                  # Main application file
+
 ├── requirements.txt        # Python dependencies
+
 ├── README.md               # Project documentation
+
 ├── .env                    # Environment variables (not pushed to GitHub)
+
 ├── src/                    # Source folder
+
 │   └── helper.py           # Helper functions (text extraction, chunking, etc.)
+
 ├── data/                   # Folder to hold uploaded or test PDFs
+
 │   └── sample.pdf
+
 └── assets/                 # Optional static assets like logos
     └── logo.png
-
+```
 💬 Usage
 
 Upload PDF files in the sidebar.
